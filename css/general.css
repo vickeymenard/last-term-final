@@ -1,0 +1,919 @@
+@charset "UTF-8";
+/* Responsive Setup */
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body{
+	font-family: sans-serif;
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+
+img{
+	width: 100%;
+}
+html{
+	background-image: url(../images/background-texture.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.main{
+	padding-bottom: 3rem;
+	margin-bottom: -10%;
+	position: inherit;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+} 
+
+.wrap{
+	text-align: center;
+}
+
+/* ---------------------------------------------------------------Header */
+.header{
+	height: 4rem;
+	background-color: #231F20;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	-webkit-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	-moz-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+}
+
+.logo{
+	padding-bottom: 1rem;
+	margin-top: .5rem;
+	width: 95px;
+}
+
+/* ---------------------------------------------------------Navigation Style */
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 64px;	
+	left: 2%;
+	-webkit-border-bottom-right-radius: 11px;
+	-webkit-border-bottom-left-radius: 11px;
+	-moz-border-radius-bottomright: 11px;
+	-moz-border-radius-bottomleft: 11px;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+
+	-webkit-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	-moz-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	
+	background: #231F20 url('../images/nav-icon.svg') no-repeat center center;
+
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	display: block;
+	padding: 1rem;
+	text-align:center;
+	color: #fff;
+	text-decoration: none;
+	background-color: #231F20;
+	border-top: 1px solid #fff;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #fff;
+	color: #000;
+}
+
+
+/* ------------------------------------------------- Toggle Nav Button*/
+
+.nav-top{
+	display: block;
+	margin-bottom: 3rem;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+/*----------------------------------------------------- Content Home Page */
+
+.home-photo{
+	margin-top: -1rem;
+	padding-bottom: 1rem;
+	background-color: #000;
+}
+
+.intro{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 400;
+	width: 90%;
+	margin: 0 5%;
+	text-align: center;
+	line-height: 1.5rem;
+	color: #87898C;
+}
+
+span{
+	font-weight: 500;
+	color: #231F20;
+}
+
+h1{
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 2.5rem;
+	color: #231F20;
+	text-align: center;
+	padding-top: 3rem;
+	margin-top: -1rem;
+	padding-right: 5%;
+	padding-left: 5%;
+
+}
+
+h2{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: #4F4F51;
+	text-align: center;
+	width: 90%;
+	margin: 0 5%;
+	padding-top: 1rem;
+}
+
+.text-bold{
+	font-size: 2rem;
+}
+
+.intro-services{
+	margin: 1rem;
+}
+
+.studio-photo{
+	width: 150px;
+	height: 150px;
+	border: 7px solid #000;
+	border-radius: 50%;
+	margin: auto 5%;
+	margin-left: 20%;
+	color: ;
+
+}
+
+.clinic-photo{
+	width: 150px;
+	height: 150px;
+	border: 7px solid #000;
+	border-radius: 50%;
+	margin-left: 19%;
+	margin-top: 1rem;
+}
+
+.icons{
+	width: 35%;
+	padding-bottom: 5%;
+	margin: auto 5%;
+}
+
+.hours-list{
+	max-width: 80%;
+	margin: auto;
+}
+
+.hours-list li{
+	line-height: 1rem;
+	text-align: center;
+}
+
+.hours-list dt{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 400;
+	padding: 6px 0 6px 0;
+	border-top: 1px solid #000;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	color: #000;
+}
+
+.hours-list dd{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	color: #231F20;
+	padding: 10px 0 10px 0;
+}
+
+.hours-table thead{
+	background-color: #000;
+	color: #fff;
+}
+
+.hours-table th,
+.hours-table td{
+	padding: 0.5rem 1rem;
+	text-align: left;
+}
+
+.hours-table tr:nth-child(even){
+	background-color: #fff;
+}
+
+.hours-table tr:last-child{
+	border-bottom: 3px solid #000;
+}
+
+.hours-table{
+	margin-bottom: 2rem;
+	width: 100%;
+	margin-left: 10%;
+	margin-right: auto;
+	display: block;
+	line-height: 1.5rem;
+}
+
+.social-icons{
+	display: inline-block;
+	width: 30%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	margin: auto 5%;
+}
+
+.phone{
+	font-size: 1.5rem;
+	padding: .8rem;
+	background-color: #fff;
+	border: 2px solid #000;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+/*------------------Contact area */
+
+input, textarea{
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	width: 200px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea{
+	width: 200px;
+	height: 150px;
+	max-width: 200px;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+	border-color: 1px solid #c9c9c9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label{
+	float: left;
+	margin-top: 0;
+	color: #999999;
+}
+
+.submit input{
+	width: 100px;
+	height: 40px;
+	background-color: #474e69;
+	color: #fff;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-bottom: 3rem;
+}
+
+.form{
+	margin: 5%;
+}
+
+.google-maps{
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: 'Signika Negative', sans-serif;
+	color: #ccc;
+	line-height: 2rem;
+}
+
+
+
+/*---------------------------------------------- Content Services Page */
+
+.h1-services{
+	padding-top: 10rem;
+}
+
+.services-title{
+	text-align: left;
+	margin: 0;
+	font-size: 1.7rem;
+
+}
+
+.service-icon{
+	float: left;
+	width: 40%;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+}
+
+.services{
+	margin: 90%;
+	margin: 0 5%;
+	text-align: left;
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	line-height: 1.5rem;
+	color: #87898C;
+	margin-bottom: 2rem;
+}
+
+/*---------------------------------------------------------- Content Contact Page */
+
+.contact-subs{
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 2rem;
+	color: #231F20;
+	text-align: center;
+	padding-top: 3rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.team-member-photo{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 7px solid #000;
+	margin-left: 20%;
+	margin-right: 5%;
+}
+
+.member{
+	font-size: 1.7rem;
+	padding-bottom: 1rem;
+	padding-top: 3rem;
+}
+
+.employement-title{
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 2.5rem;
+	color: #231F20;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.contact-page-icons{
+	width: 40%;
+
+}
+
+.map{
+	padding-top: 1rem;
+	bottom: 0;
+}
+
+.form-contact{
+	padding-left: 13%;
+}
+
+.member-description{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 400;
+	width: 90%;
+	margin: 0 5%;
+	text-align: center;
+	line-height: 1.5rem;
+	color: #87898C;
+	}
+
+.contact-page-icons{
+	display: inline-block;
+	width: 30%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	margin: auto 5%;
+}
+
+/*---------------------------------------------------------- Content Schedule Page */
+
+.schedule-subs{
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
+	padding-top: 3rem;
+	margin-bottom: 1rem;
+	background-color: #000;
+	padding: 1rem;
+	margin-top: 3rem;
+}
+
+.schedule-list{
+	max-width: 80%;
+	margin: auto;
+}
+
+.schedule-list li{
+	line-height: 1rem;
+	text-align: center;
+	margin-top: 2rem;	
+}
+
+.schedule-list dt{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 400;
+	padding: 6px 0 6px 0;
+	border-top: 1px solid #000;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	color: #000;
+}
+
+.schedule-list dd{
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 300;
+	color: #231F20;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.yoga-schedule{
+	width: 80%;
+	margin: auto;
+}
+
+/*---------------------------------- Footer */
+
+footer{
+	background-color: #231F20;
+	height: 4rem;
+	color: #fff;
+	padding-top: .5rem;
+	padding-left: 5%;
+	font-size: .8rem;
+} 
+
+
+/*--------------------------------------------------------------- Mediaquiery */
+
+@media only screen and (min-width: 15rem){
+
+	
+	.nav-top{
+		display: none;
+	}
+
+	.hours-table{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 25rem){
+
+	.hours-list{
+		display:none;
+	}
+
+	.hours-table{
+		display: block;
+	}
+
+	.nav-top{
+		display: block;
+	}
+
+	.nav {
+		overflow: auto;
+	}
+	
+	.nav li{
+		float: left;
+		width: 25%;
+
+	}
+	
+	.nav-top{
+		position: absolute;
+		top: 80px;
+		width: 100%;
+	}
+
+	.header{
+		height: 7rem;
+		-webkit-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+		-moz-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+		box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.43);
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited {
+		padding: 0;
+		border-top: 0px solid #fff;
+	}
+
+	.nav a:hover,
+	.nav a:focus,
+	.nav a:active{
+	background-color: #fff;
+	color: #000;
+	padding: .5rem;
+	}
+
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+
+	.main{
+		margin: 5%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.home-photo{
+	margin-top: 3rem;
+	padding-bottom: 2rem;
+	background-color: #000;
+	}
+
+	.studio-photo{
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	margin-left: 25%;
+
+	}
+
+	.clinic-photo{
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	margin-left: 25%;
+	}
+
+	.icons{
+		width: 30%;
+	}
+
+	.phone{
+	max-width: 75%;
+	margin: auto;
+	}
+
+	.social-icons{
+	width: 25%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: auto 5%;
+	}
+
+
+/*-------------------------------------------Services */
+
+	.service-icon{
+	float: left;
+	width: 30%;
+	margin-top: 1rem;
+	}
+
+	.services{
+		text-align: left;
+		font-family: 'Signika Negative', sans-serif;
+		font-weight: 300;
+		color: #87898C;
+		padding-bottom: 3rem;
+	}
+/*-------------------------------------------Contact page */
+
+	.team-member-photo{
+	float: left;
+	margin-left: 5%;
+	}
+
+	.member{
+	text-align: left;
+	font-size: 1.7rem;
+	}
+
+	.member-description{
+	text-align: left;
+	}
+
+	input, textarea{
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	width: 300px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	}
+
+	textarea{
+		width: 300px;
+		height: 150px;
+		max-width: 300px;
+		line-height: 18px;
+	}
+
+	input:hover, textarea:hover,
+	input:focus, textarea:focus{
+		border-color: 1px solid #c9c9c9;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+		-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	}
+
+	.form label{
+		color: #999999;
+	}
+
+	.submit input{
+		width: 100px;
+		height: 40px;
+		background-color: #474e69;
+		color: #fff;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		margin-bottom: 2rem;
+	}
+	
+	.form{
+		width: 50%;
+		margin-left: 10%;
+	}
+
+	.schedule-list{
+		max-width: 75%;
+		margin: auto;
+}
+
+@media only screen and (min-width: 37rem){
+
+	.main{
+		margin: 10%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	h1{
+		font-size: 3.5rem;
+	}
+
+	.contact-subs{
+		font-size: 2.5rem;
+	}
+
+	.icons{
+		width: 25%;
+		padding-bottom: 5%;
+		margin: auto 10%;
+	}
+
+	.studio-photo{
+		margin-left: 30%;
+	}
+
+	.hours-table{
+		margin-left: 23%;
+	}
+
+	.social-icons{
+		width: 15%;
+	}
+
+	.phone{
+		width: 50%;
+	}
+
+	.form{
+		width: 50%;
+		margin-top: 5%;
+	}
+
+	.contact-page-icons{
+		width: 15%;
+		margin-top: 1rem;
+	}
+
+	.employement-title{
+		font-family: 'Bilbo Swash Caps', cursive;
+		font-size: 3.5rem;
+		color: #231F20;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+
+	.services-title{
+		font-size: 2rem;
+
+	}
+
+	.schedule-subs{
+		width: 70%;
+		margin: auto;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+
+	.yoga-schedule{
+		width: 60%;
+		margin: auto;
+	}
+
+}
+
+@media only screen and (min-width: 55rem){ /*---- 800px*/
+	.service-picture{
+		width: 65%;
+		margin-left: 30%;
+	}
+
+	.schedule-subs{
+		width: 60%;
+		margin: auto;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+
+	.yoga-schedule{
+		width: 50%;
+		margin: auto;
+	}
+
+	.form{
+		width: 50%;
+	}
+
+	.map{
+		width: 40%;
+	}
+
+
+	}
+
+@media only screen and (min-width: 62rem){ /* -------1000*/
+
+	.main{
+		margin: 10%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.intro{
+		width: 70%;
+		margin: auto;
+		text-align: left;
+	}
+
+	h1{
+		font-size: 3.5rem;
+	}
+
+	.contact-subs{
+		font-size: 3rem;
+		width: 70%;
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+
+	.hours-table{
+		margin-left: 37%;
+	}
+
+	.icons{
+		width: 15%;
+		padding-bottom: 5%;
+		margin: auto;
+		padding-right: 1rem;
+		margin-top: 1rem;
+	}
+
+	.studio-photo{
+		float: left;
+		margin-left: 20%;
+		margin-right: 5%;
+	}
+
+	.social-icons{
+		width: 10%;
+	}
+
+	.contact-intro{
+		text-align: center;
+	}
+
+	.services{
+		width: 70%;
+		margin: auto;
+		text-align: left;
+		padding-bottom: 4rem;
+	}
+
+	.service-icon{
+		float: left;
+		width: 15%;
+		margin-top: 1rem;
+
+	}
+
+	.services{
+		text-align: left;
+		font-family: 'Signika Negative', sans-serif;
+		font-weight: 300;
+		color: #87898C;
+	}
+
+	.services-title{
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+
+	.service-picture{
+		width: 65%;
+		margin-left: 15%;
+		padding-top: 1rem;
+	}
+
+	.schedule-subs{
+	width: 40%;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	}
+
+
+	.yoga-schedule{
+		width: 30%;
+		margin: auto;
+	}
+
+	.contact-section{
+		text-align: center;
+		width: 70%;
+		margin: auto;
+	}
+
+	.employement-title{
+
+	}
+
+	.map{
+		width: 65%;
+		margin-left: 15%;
+	}
+
+}
+
